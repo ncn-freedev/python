@@ -12,5 +12,8 @@ for i in range (lin):
     matriz.append(lista_linha.copy())
     lista_linha.clear()
 
-for i in matriz:
-    print(i)
+for linha in matriz:
+    print("|", end="")
+    for termo in linha:
+        print("{:^5d}".format(termo), end="")
+    print("|")

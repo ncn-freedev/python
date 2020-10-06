@@ -11,14 +11,11 @@ def bubble_sort(lista_parametro):
     A função executará essas comparações quantas vezes forem necessárias, até que nenhuma troca seja feita.
     """
     mudou = True
-    temp = 0
     while mudou is True:
         mudou  = False
         for i in range (len(lista_parametro)-1):
             if lista_parametro[i] > lista_parametro[i+1]:
-                temp = lista_parametro[i+1]
-                lista_parametro[i+1] = lista_parametro[i]
-                lista_parametro[i] = temp
+                lista_parametro[i], lista_parametro[i+1] = lista_parametro[i+1], lista_parametro[i]
                 mudou = True
     return lista_parametro
 

@@ -5,6 +5,11 @@ quantidade = int(input("Digite qual a quantidade de termos da sua lista!"))
 lista_gerada = []
 
 def bubble_sort(lista_parametro):
+    """
+    Método de ordenação bubble sort que consiste em comparar dois valores subsequentes de uma lista
+    e trocá_los de lugar caso o valor de i+1 seja maior que o valor de i.
+    A função executará essas comparações quantas vezes forem necessárias, até que nenhuma troca seja feita.
+    """
     mudou = True
     temp = 0
     while mudou is True:
